@@ -1,0 +1,47 @@
+package APP;
+
+import EXP.UnexpectedWeekDay;
+
+public class Event {
+	/**
+	 * The Event class models a scheduled activity that occurs
+	 * at a specific start and end time within a single day.
+	 *
+	 * Responsibilities:
+	 * - Store information such as title, description, date, duration.
+	 * - Provide methods to display event details and check for time conflicts.
+	 * - Serve as a core data type managed by Day and Week classes.
+	 *
+	 * This class represents time-bound entries in the planner.
+	 * 
+	 * 
+	 * each event has a duration , sum of the duration of the events should not be more than 24 hours,
+	 *  i will make the events as a linked lists
+	 */
+	private String title; 
+	private Day day; 
+	private int duration = 0; 
+	
+	public Event ( String title, String day ) throws UnexpectedWeekDay { 
+		this.title = title; 
+		this.day = new Day(day); 
+		
+	}
+	
+	public void addDuration(int d) { 
+		this.duration = d; 
+		
+	}
+	
+	public int getDuration() { 
+		return this.duration; 
+	}
+	
+	public String getTitle() { 
+		return this.title; 
+		
+	}
+	
+	// it will create a node of the event add it to the linked list 
+	
+}

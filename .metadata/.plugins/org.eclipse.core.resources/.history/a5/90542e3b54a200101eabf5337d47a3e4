@@ -1,0 +1,16 @@
+package APP;
+
+public class Event {
+	/**
+	 * The Event class models a scheduled activity that occurs
+	 * at a specific start and end time within a single day.
+	 *
+	 * Responsibilities:
+	 * - Store information such as title, description, date, start time, and end time.
+	 * - Provide methods to display event details and check for time conflicts.
+	 * - Serve as a core data type managed by Day and Week classes.
+	 *
+	 * This class represents time-bound entries in the planner.
+	 */
+
+}
