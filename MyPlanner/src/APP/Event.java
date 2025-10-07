@@ -22,6 +22,10 @@ public class Event {
 	private Day day; 
 	private int duration = 0; 
 	
+	public Event (Event e) {
+		this.day = e.day; 
+		this.title = e.title; 
+	}
 	public Event ( String title, String day ) throws UnexpectedWeekDay { 
 		this.title = title; 
 		this.day = new Day(day); 
